@@ -14,9 +14,9 @@ vcpkg_configure_make(
     [SKIP_CONFIGURE]
     [PROJECT_SUBPATH <${PROJ_SUBPATH}>]
     [PRERUN_SHELL <${SHELL_PATH}>]
-    [OPTIONS <-DUSE_THIS_IN_ALL_BUILDS=1>...]
-    [OPTIONS_RELEASE <-DOPTIMIZE=1>...]
-    [OPTIONS_DEBUG <-DDEBUGGABLE=1>...]
+    [OPTIONS <--use-this-in-all-builds>...]
+    [OPTIONS_RELEASE <--optimize>...]
+    [OPTIONS_DEBUG <--debuggable>...]
 )
 ```
 
@@ -69,6 +69,7 @@ This command supplies many common arguments to configure. To see the full list, 
 
 ## Examples
 
+* [luajit](https://github.com/Microsoft/vcpkg/blob/master/ports/luajit/portfile.cmake)
 * [x264](https://github.com/Microsoft/vcpkg/blob/master/ports/x264/portfile.cmake)
 * [tcl](https://github.com/Microsoft/vcpkg/blob/master/ports/tcl/portfile.cmake)
 * [freexl](https://github.com/Microsoft/vcpkg/blob/master/ports/freexl/portfile.cmake)
